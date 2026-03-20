@@ -26,3 +26,10 @@ def test_connection():
 def get_database_label():
     url = make_url(DATABASE_URL)
     return f"{url.drivername}://{url.username}@{url.host}:{url.port}/{url.database}"
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

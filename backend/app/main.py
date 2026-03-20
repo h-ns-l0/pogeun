@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from sqlalchemy.exc import SQLAlchemyError
+from app.api.clothing_item import router as clothing_item_router
 
 from app.core.database import get_database_label, test_connection
 
@@ -30,3 +31,5 @@ def health_db():
         "database": get_database_label(),
         "version": version,
     }
+
+app.include_router(clothing_item_router)
