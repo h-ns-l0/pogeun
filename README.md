@@ -2,7 +2,7 @@
 
 간단한 `FastAPI + PostgreSQL + React(Vite)` 프로젝트입니다.
 
-## 백엔드 구조
+## 구조
 
 ```text
 backend
