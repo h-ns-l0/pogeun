@@ -8,6 +8,7 @@ from app.schemas.recommendation import (
 )
 from app.schemas.recommendation_item import RecommendationItemCreate, RecommendationItemRead
 from app.schemas.user import UserCreate, UserRead
+from app.schemas.weather import WeatherForecastEntry, WeatherForecastResponse
 
 __all__ = [
     "ClothingItemCreate",
@@ -23,4 +24,6 @@ __all__ = [
     "RecommendationRead",
     "UserCreate",
     "UserRead",
+    "WeatherForecastEntry",
+    "WeatherForecastResponse",
 ]

@@ -1,8 +1,11 @@
 import os
 
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import make_url
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
+
+load_dotenv()
 
 DEFAULT_DATABASE_URL = "postgresql+psycopg://postgres:0000@localhost:5432/pogeun"
 DATABASE_URL = os.getenv("DATABASE_URL", DEFAULT_DATABASE_URL)
