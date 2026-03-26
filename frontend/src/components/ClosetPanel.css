@@ -1,0 +1,84 @@
+.closet-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.closet-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.closet-title {
+  margin: 0;
+  color: #6bb6ff;
+  font-weight: 800;
+}
+
+.closet-sub,
+.message {
+  color: var(--muted);
+}
+
+.tab-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 20px;
+}
+
+.tab-pill {
+  border: 0;
+  border-radius: 16px;
+  background: var(--soft-blue);
+  color: var(--text-h);
+  padding: 9px 14px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.tab-pill.active {
+  background: #6bb6ff;
+  color: white;
+}
+
+.closet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px 14px;
+}
+
+.closet-card {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.message {
+  margin: 12px 2px 0;
+}
+
+.message.error {
+  color: #bf3d3d;
+}
+
+@media (max-width: 760px) {
+  .closet-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .closet-panel {
+    padding: 16px;
+  }
+
+  .closet-grid {
+    grid-template-columns: 1fr;
+  }
+}

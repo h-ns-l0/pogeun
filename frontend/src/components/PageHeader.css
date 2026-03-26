@@ -1,0 +1,28 @@
+.topbar {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  padding-top: 2px;
+}
+
+.brand-logo {
+  width: min(240px, 42vw);
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 16px 24px rgba(84, 159, 219, 0.16))
+    drop-shadow(0 4px 10px rgba(255, 255, 255, 0.22));
+}
+
+.tagline {
+  color: var(--muted);
+  text-align: center;
+  margin-top: -4px;
+}
+
+@media (max-width: 560px) {
+  .brand-logo {
+    width: min(200px, 58vw);
+  }
+}

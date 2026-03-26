@@ -1,0 +1,69 @@
+.clothing-card strong {
+  color: var(--text-h);
+}
+
+.clothing-copy {
+  display: grid;
+  gap: 4px;
+}
+
+.clothing-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.clothing-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  border: 1px solid rgba(107, 182, 255, 0.14);
+  background-size: cover;
+  background-position: center;
+}
+
+.clothing-photo.image {
+  object-fit: cover;
+  display: block;
+}
+
+.clothing-photo.sand {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 50%),
+    linear-gradient(25deg, #8e755d, #c8b39a 48%, #f0e7de);
+}
+
+.clothing-photo.forest {
+  background:
+    radial-gradient(circle at 60% 30%, rgba(255, 207, 150, 0.35), transparent 18%),
+    linear-gradient(145deg, #385941, #65855d 50%, #e3aa61);
+}
+
+.clothing-photo.mist {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent 35%),
+    linear-gradient(140deg, #5b5a5a, #a6a6a6 55%, #e7eaef);
+}
+
+.clothing-photo.ash {
+  background:
+    linear-gradient(140deg, rgba(255, 255, 255, 0.5), transparent 28%),
+    linear-gradient(135deg, #6e7074, #bfc4c7 50%, #f3f3f3);
+}
+
+.clothing-photo.graphite {
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.08), transparent 35%),
+    linear-gradient(135deg, #1f1f22, #57585b 50%, #999c9f);
+}
+
+.clothing-photo.berry {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 30%),
+    linear-gradient(125deg, #74404b, #b17f7f 52%, #d9c6b9);
+}
+
+.clothing-photo.plum {
+  background:
+    radial-gradient(circle at 75% 20%, rgba(255, 255, 255, 0.4), transparent 20%),
+    linear-gradient(135deg, #2d252e, #5f4c63 50%, #f0e5ef);
+}
